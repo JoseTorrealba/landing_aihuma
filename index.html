@@ -37,10 +37,11 @@
   <!-- Header -->
   <header class="bg-white shadow-md relative">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="#home" class="flex items-center gap-2">
-        <img src="image.png" alt="Logo AIHuma" class="h-12 w-auto" />
+      <div class="flex items-center gap-2">
+        <a href="#home"><img src="image.png" alt="Logo AIHuma" class="h-12 w-auto" /></a>
         <span class="text-xl font-bold text-turquesa">AIHuma</span>
-      </a>
+        <span class="ml-2 text-xs bg-turquesaOscuro text-white px-2 py-1 rounded-full">🤖 Automatizado con IA</span>
+      </div>
       <button class="md:hidden block" onclick="toggleMenu()">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -49,72 +50,75 @@
       <nav id="menu" class="hidden md:flex space-x-4 md:space-x-6 md:relative absolute top-16 left-0 w-full bg-white md:bg-transparent md:shadow-none shadow-md md:flex-row flex-col md:items-center md:justify-end z-50">
         <a href="#que-es" class="text-grisOscuro hover:text-turquesaOscuro px-4 py-2" onclick="toggleMenu()">¿Qué es?</a>
         <a href="#problemas" class="text-grisOscuro hover:text-turquesaOscuro px-4 py-2" onclick="toggleMenu()">Problemas</a>
-        <a href="#ia" class="text-grisOscuro hover:text-turquesaOscuro px-4 py-2" onclick="toggleMenu()">IA</a>
-        <a href="#beta" class="text-grisOscuro hover:text-turquesaOscuro px-4 py-2" onclick="toggleMenu()">Beta</a>
-        <a href="#faq" class="text-grisOscuro hover:text-turquesaOscuro px-4 py-2" onclick="toggleMenu()">FAQ</a>
+        <a href="#beneficios" class="text-grisOscuro hover:text-turquesaOscuro px-4 py-2" onclick="toggleMenu()">Beneficios</a>
+        <a href="#faq" class="text-grisOscuro hover:text-turquesaOscuro px-4 py-2" onclick="toggleMenu()">Preguntas Frecuentes</a>
+        <a href="#fundador" class="text-grisOscuro hover:text-turquesaOscuro px-4 py-2" onclick="toggleMenu()">Fundador</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="bg-turquesaClaro py-16 md:py-20 text-center">
+  <section id="home" class="bg-turquesaClaro py-20 text-center">
     <div class="max-w-2xl mx-auto px-4">
-      <h1 class="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">¿Y si mañana llega la Dirección del Trabajo? Evita multas y errores laborales antes de que sea tarde.</h1>
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">¿Y si mañana llega la Dirección del Trabajo? Evita multas y errores laborales antes de que sea tarde.</h1>
       <p class="text-sm md:text-lg text-white mb-6">Cumple con la ley laboral sin enredos con AIHuma.</p>
-      <a href="#beta" class="bg-coral text-white font-semibold px-5 py-2 md:px-8 md:py-3 rounded-full text-sm md:text-lg" onclick="location.href='https://tally.so/r/mZe895'">✅ Evalúa si tu pyme está en riesgo GRATIS</a>
+      <a href="#beta" class="bg-coral text-white font-semibold px-6 py-3 md:px-8 md:py-4 rounded-full text-lg">✅ Evalúa si tu pyme está en riesgo GRATIS</a>
     </div>
   </section>
 
-  <!-- Beneficios Visuales -->
-  <section class="py-12 md:py-16 bg-white">
+  <!-- Sección Visual: ¿Cómo funciona AIHuma? -->
+  <section id="como-funciona" class="py-16 bg-white text-center">
     <div class="max-w-4xl mx-auto px-4">
-      <h3 class="text-2xl md:text-3xl font-bold mb-6 text-turquesa text-center">Beneficios de AIHuma</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      <h3 class="text-3xl font-bold mb-6 text-turquesa">¿Cómo funciona AIHuma?</h3>
+      <p class="text-lg mb-8">Con tecnología de Inteligencia Artificial, AIHuma monitorea continuamente el cumplimiento laboral de tu empresa.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="p-4">
-          <p class="text-3xl md:text-4xl">📄</p>
-          <h4 class="font-bold text-lg mt-2">Contratos firmados</h4>
-          <p class="text-sm">Firma digital y respaldo seguro.</p>
+          <p class="text-4xl">📄</p>
+          <h4 class="font-bold text-lg mt-2">Revisión Automática</h4>
+          <p class="text-sm">La IA detecta documentos faltantes o firmas pendientes.</p>
         </div>
         <div class="p-4">
-          <p class="text-3xl md:text-4xl">⏱️</p>
-          <h4 class="font-bold text-lg mt-2">Turnos automatizados</h4>
-          <p class="text-sm">Todo controlado sin esfuerzo.</p>
+          <p class="text-4xl">🚨</p>
+          <h4 class="font-bold text-lg mt-2">Alertas Tempranas</h4>
+          <p class="text-sm">Te avisa antes de que un error se convierta en problema.</p>
         </div>
         <div class="p-4">
-          <p class="text-3xl md:text-4xl">🚨</p>
-          <h4 class="font-bold text-lg mt-2">Alertas tempranas</h4>
-          <p class="text-sm">Evita errores antes de la fiscalización.</p>
+          <p class="text-4xl">🧾</p>
+          <h4 class="font-bold text-lg mt-2">Generación Inteligente</h4>
+          <p class="text-sm">Crea contratos y anexos adaptados a cada situación.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Validación Social -->
-  <section class="py-12 md:py-16 bg-grisPerla">
+  <!-- Caso de Uso / Ejemplo Real -->
+  <section id="caso-uso" class="py-16 bg-grisPerla">
     <div class="max-w-4xl mx-auto px-4 text-center">
-      <h3 class="text-2xl md:text-3xl font-bold mb-6 text-turquesa">Lo que dicen nuestros usuarios</h3>
-      <p class="text-lg italic">🗣️ “Con AIHuma, evitamos una multa por no tener las firmas actualizadas a tiempo.”</p>
-      <p class="mt-4 font-bold">- Carla G., Emprendedora</p>
+      <h3 class="text-3xl font-bold mb-6 text-turquesa">Antes y Después de AIHuma</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-4 bg-white rounded-lg shadow-md">
+          <h4 class="font-bold text-lg">❗ Antes de AIHuma</h4>
+          <p class="text-sm">José olvidó actualizar un anexo de contrato después de cambiar el horario de un trabajador. El error pasó desapercibido, hasta que llegó una fiscalización.</p>
+        </div>
+        <div class="p-4 bg-exito text-white rounded-lg shadow-md">
+          <h4 class="font-bold text-lg">✅ Con AIHuma</h4>
+          <p class="text-sm">La IA detectó el cambio de horario y generó automáticamente el anexo, solicitando la firma antes de que fuera tarde.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Preguntas Frecuentes -->
-  <section id="faq" class="py-12 md:py-16 bg-white">
+  <section id="faq" class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-4">
-      <h3 class="text-2xl md:text-3xl font-bold mb-6 text-turquesa text-center">Preguntas Frecuentes</h3>
-      <div class="space-y-4">
-        <details class="bg-grisPerla p-4 rounded-lg">
-          <summary class="font-bold cursor-pointer">❓ ¿Es seguro firmar digitalmente?</summary>
-          <p class="mt-2">Sí, todas las firmas están respaldadas y cumplen con la normativa vigente.</p>
-        </details>
-        <details class="bg-grisPerla p-4 rounded-lg">
-          <summary class="font-bold cursor-pointer">❓ ¿Cuánto tiempo toma automatizar los procesos?</summary>
-          <p class="mt-2">La automatización toma menos de 48 horas una vez que se integra AIHuma.</p>
-        </details>
-        <details class="bg-grisPerla p-4 rounded-lg">
-          <summary class="font-bold cursor-pointer">❓ ¿Cuándo estará disponible la versión final?</summary>
-          <p class="mt-2">Actualmente estamos en beta, pero la versión final llegará en los próximos 3 meses.</p>
-        </details>
+      <h3 class="text-3xl font-bold mb-6 text-turquesa text-center">Preguntas Frecuentes</h3>
+      <div class="text-left">
+        <p class="font-bold">❓ ¿Es seguro firmar digitalmente?</p>
+        <p class="mb-4">Sí, AIHuma utiliza tecnología segura y certificada para garantizar la validez legal de las firmas digitales.</p>
+        <p class="font-bold">❓ ¿Cuánto tiempo toma automatizar los procesos?</p>
+        <p class="mb-4">La configuración inicial toma solo unos minutos y AIHuma empieza a monitorear desde el primer día.</p>
+        <p class="font-bold">❓ ¿Cuándo estará disponible la versión final?</p>
+        <p class="mb-4">La beta está disponible ahora y la versión final estará lista en los próximos meses.</p>
       </div>
     </div>
   </section>
@@ -123,7 +127,6 @@
   <footer class="bg-white border-t py-8 text-center">
     <p class="mb-2">&copy; 2025 AIHuma. Todos los derechos reservados.</p>
     <div class="flex justify-center space-x-4 text-sm">
-      <a href="#home" class="text-infoAzul hover:underline">Inicio</a>
       <a href="#" class="text-infoAzul hover:underline">Sobre Nosotros</a>
       <a href="#" class="text-infoAzul hover:underline">Contacto</a>
       <a href="#" class="text-infoAzul hover:underline">Privacidad</a>
