@@ -30,13 +30,12 @@
   <script>
     function toggleMenu() {
       document.getElementById('menu').classList.toggle('hidden');
-      document.getElementById('menu').classList.toggle('flex');
     }
   </script>
 </head>
 <body class="bg-grisPerla text-grisOscuro font-sans">
   <!-- Header -->
-  <header class="bg-white shadow-md">
+  <header class="bg-white shadow-md relative">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center gap-2">
         <img src="image.png" alt="Logo AIHuma" class="h-10 w-auto" />
@@ -47,20 +46,13 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
-      <nav id="menu" class="hidden md:flex space-x-4">
-        <a href="#que-es" class="text-grisOscuro hover:text-turquesaOscuro">¿Qué es?</a>
-        <a href="#problemas" class="text-grisOscuro hover:text-turquesaOscuro">Problemas</a>
-        <a href="#ia" class="text-grisOscuro hover:text-turquesaOscuro">IA</a>
-        <a href="#beta" class="text-grisOscuro hover:text-turquesaOscuro">Beta</a>
-        <a href="#fundador" class="text-grisOscuro hover:text-turquesaOscuro">Fundador</a>
+      <nav id="menu" class="hidden md:flex space-x-4 md:space-x-6 md:relative absolute top-16 left-0 w-full bg-white md:bg-transparent md:shadow-none shadow-md md:flex-row flex-col md:items-center md:justify-end z-50">
+        <a href="#que-es" class="text-grisOscuro hover:text-turquesaOscuro px-4 py-2">¿Qué es?</a>
+        <a href="#problemas" class="text-grisOscuro hover:text-turquesaOscuro px-4 py-2">Problemas</a>
+        <a href="#ia" class="text-grisOscuro hover:text-turquesaOscuro px-4 py-2">IA</a>
+        <a href="#beta" class="text-grisOscuro hover:text-turquesaOscuro px-4 py-2">Beta</a>
+        <a href="#fundador" class="text-grisOscuro hover:text-turquesaOscuro px-4 py-2">Fundador</a>
       </nav>
-    </div>
-    <div id="menu" class="hidden flex-col md:hidden bg-white shadow-md space-y-2 px-4 py-2 w-full absolute top-16 left-0 z-50">
-      <a href="#que-es" class="block text-grisOscuro hover:text-turquesaOscuro">¿Qué es?</a>
-      <a href="#problemas" class="block text-grisOscuro hover:text-turquesaOscuro">Problemas</a>
-      <a href="#ia" class="block text-grisOscuro hover:text-turquesaOscuro">IA</a>
-      <a href="#beta" class="block text-grisOscuro hover:text-turquesaOscuro">Beta</a>
-      <a href="#fundador" class="block text-grisOscuro hover:text-turquesaOscuro">Fundador</a>
     </div>
   </header>
 
