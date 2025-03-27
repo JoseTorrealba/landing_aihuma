@@ -30,6 +30,7 @@
   <script>
     function toggleMenu() {
       document.getElementById('menu').classList.toggle('hidden');
+      document.getElementById('menu').classList.toggle('flex');
     }
   </script>
 </head>
@@ -54,12 +55,12 @@
         <a href="#fundador" class="text-grisOscuro hover:text-turquesaOscuro">Fundador</a>
       </nav>
     </div>
-    <div id="menu" class="hidden md:hidden flex flex-col bg-white shadow-md space-y-2 px-4 py-2">
-      <a href="#que-es" class="text-grisOscuro hover:text-turquesaOscuro">¿Qué es?</a>
-      <a href="#problemas" class="text-grisOscuro hover:text-turquesaOscuro">Problemas</a>
-      <a href="#ia" class="text-grisOscuro hover:text-turquesaOscuro">IA</a>
-      <a href="#beta" class="text-grisOscuro hover:text-turquesaOscuro">Beta</a>
-      <a href="#fundador" class="text-grisOscuro hover:text-turquesaOscuro">Fundador</a>
+    <div id="menu" class="hidden flex-col md:hidden bg-white shadow-md space-y-2 px-4 py-2 w-full absolute top-16 left-0 z-50">
+      <a href="#que-es" class="block text-grisOscuro hover:text-turquesaOscuro">¿Qué es?</a>
+      <a href="#problemas" class="block text-grisOscuro hover:text-turquesaOscuro">Problemas</a>
+      <a href="#ia" class="block text-grisOscuro hover:text-turquesaOscuro">IA</a>
+      <a href="#beta" class="block text-grisOscuro hover:text-turquesaOscuro">Beta</a>
+      <a href="#fundador" class="block text-grisOscuro hover:text-turquesaOscuro">Fundador</a>
     </div>
   </header>
 
