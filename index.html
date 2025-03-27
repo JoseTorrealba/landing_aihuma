@@ -27,15 +27,26 @@
       }
     }
   </script>
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('hidden');
+    }
+  </script>
 </head>
 <body class="bg-grisPerla text-grisOscuro font-sans">
+  <!-- Header -->
   <header class="bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center gap-2">
         <img src="image.png" alt="Logo AIHuma" class="h-10 w-auto" />
         <span class="text-xl font-bold text-turquesa">AIHuma</span>
       </div>
-      <nav class="space-x-4">
+      <button class="md:hidden block" onclick="toggleMenu()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <nav id="menu" class="hidden md:flex space-x-4">
         <a href="#que-es" class="text-grisOscuro hover:text-turquesaOscuro">¿Qué es?</a>
         <a href="#problemas" class="text-grisOscuro hover:text-turquesaOscuro">Problemas</a>
         <a href="#ia" class="text-grisOscuro hover:text-turquesaOscuro">IA</a>
@@ -43,13 +54,24 @@
         <a href="#fundador" class="text-grisOscuro hover:text-turquesaOscuro">Fundador</a>
       </nav>
     </div>
+    <div id="menu" class="hidden md:hidden flex flex-col bg-white shadow-md space-y-2 px-4 py-2">
+      <a href="#que-es" class="text-grisOscuro hover:text-turquesaOscuro">¿Qué es?</a>
+      <a href="#problemas" class="text-grisOscuro hover:text-turquesaOscuro">Problemas</a>
+      <a href="#ia" class="text-grisOscuro hover:text-turquesaOscuro">IA</a>
+      <a href="#beta" class="text-grisOscuro hover:text-turquesaOscuro">Beta</a>
+      <a href="#fundador" class="text-grisOscuro hover:text-turquesaOscuro">Fundador</a>
+    </div>
   </header>
+
+  <!-- Hero Section -->
   <section class="bg-turquesaClaro py-20 text-center">
     <div class="max-w-2xl mx-auto px-4">
       <h2 class="text-4xl font-bold text-white mb-4">AIHuma</h2>
       <p class="text-lg text-white mb-6">La forma más simple de mantener tu empresa al día con la ley laboral.</p>
     </div>
   </section>
+
+  <!-- ¿Qué es AIHuma? -->
   <section id="que-es" class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-4">
       <h3 class="text-3xl font-bold mb-6 text-turquesa">¿Qué es AIHuma?</h3>
@@ -63,6 +85,8 @@
       <p class="mt-4 font-semibold text-violeta">Y lo más importante: te avisamos si falta algo por firmar o si cambian las reglas del juego.</p>
     </div>
   </section>
+
+  <!-- Problemas que resuelve -->
   <section id="problemas" class="py-16 bg-grisPerla">
     <div class="max-w-4xl mx-auto px-4">
       <h3 class="text-3xl font-bold mb-6 text-turquesa">Problemas que resuelve</h3>
@@ -74,6 +98,8 @@
       </ul>
     </div>
   </section>
+
+  <!-- Inteligencia Artificial -->
   <section id="ia" class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-4">
       <h3 class="text-3xl font-bold mb-6 text-turquesa">Inteligencia Artificial al servicio de tu tranquilidad</h3>
@@ -84,6 +110,8 @@
       </ul>
     </div>
   </section>
+
+  <!-- Beta gratis -->
   <section id="beta" class="py-16 bg-coral text-center">
     <div class="max-w-2xl mx-auto px-4 text-white">
       <h3 class="text-3xl font-bold mb-4">✨ Prueba gratis la beta</h3>
@@ -92,12 +120,16 @@
       <a href="https://tally.so/r/mZe895" class="bg-white text-coral font-semibold px-6 py-3 rounded-full text-lg" target="_blank">🔗 Ir a la encuesta</a>
     </div>
   </section>
+
+  <!-- Fundador -->
   <section id="fundador" class="py-16 bg-white">
     <div class="max-w-3xl mx-auto px-4 text-center">
       <h3 class="text-3xl font-bold mb-4 text-turquesa">Hecho por emprendedores, para emprendedores</h3>
       <p>Soy Jose Torrealba, fundador de AIHuma. Hace poco viví una fiscalización de la Dirección del Trabajo y entendí lo complejo que puede ser cumplir con la ley. AIHuma nace de esa necesidad real.</p>
     </div>
   </section>
+
+  <!-- Footer -->
   <footer class="bg-white border-t py-8 text-center">
     <p class="mb-2">&copy; 2025 AIHuma. Todos los derechos reservados.</p>
     <p>Síguenos en Instagram: <a href="https://www.instagram.com/aihuma.cl" class="text-infoAzul hover:underline" target="_blank">@aihuma.cl</a></p>
