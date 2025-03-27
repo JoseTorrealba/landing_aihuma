@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page - AIHuma</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            turquesa: '#26A69A',
+            turquesaOscuro: '#1D867D',
+            turquesaClaro: '#43B5AB',
+            coral: '#FF8A65',
+            violeta: '#7E57C2',
+            grisPerla: '#F5F5F5',
+            grisMedio: '#E0E0E0',
+            grisOscuro: '#424242',
+            exito: '#2ECC71',
+            alerta: '#E57373',
+            advertencia: '#FFC107',
+            infoAzul: '#42A5F5'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-grisPerla text-grisOscuro font-sans">
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <img src="image.png" alt="Logo AIHuma" class="h-10 w-auto" />
+        <span class="text-xl font-bold text-turquesa">AIHuma</span>
+      </div>
+      <nav class="space-x-4">
+        <a href="#que-es" class="text-grisOscuro hover:text-turquesaOscuro">¿Qué es?</a>
+        <a href="#problemas" class="text-grisOscuro hover:text-turquesaOscuro">Problemas</a>
+        <a href="#ia" class="text-grisOscuro hover:text-turquesaOscuro">IA</a>
+        <a href="#beta" class="text-grisOscuro hover:text-turquesaOscuro">Beta</a>
+        <a href="#fundador" class="text-grisOscuro hover:text-turquesaOscuro">Fundador</a>
+      </nav>
+    </div>
+  </header>
+  <section class="bg-turquesaClaro py-20 text-center">
+    <div class="max-w-2xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-white mb-4">AIHuma</h2>
+      <p class="text-lg text-white mb-6">La forma más simple de mantener tu empresa al día con la ley laboral.</p>
+    </div>
+  </section>
+  <section id="que-es" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-6 text-turquesa">¿Qué es AIHuma?</h3>
+      <p class="mb-4">AIHuma es una plataforma que automatiza la gestión laboral de las pymes para que no pierdas tiempo ni cometas errores legales.</p>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Firmar contratos y anexos digitales.</li>
+        <li>Llevar asistencia y turnos al día.</li>
+        <li>Generar liquidaciones y entregarlas a tiempo.</li>
+        <li>Almacenar todo en un archivador virtual accesible.</li>
+      </ul>
+      <p class="mt-4 font-semibold text-violeta">Y lo más importante: te avisamos si falta algo por firmar o si cambian las reglas del juego.</p>
+    </div>
+  </section>
+  <section id="problemas" class="py-16 bg-grisPerla">
+    <div class="max-w-4xl mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-6 text-turquesa">Problemas que resuelve</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li>No sabes si estás cumpliendo con la ley.</li>
+        <li>Pierdes horas haciendo documentos manuales.</li>
+        <li>Te faltan firmas o respaldos ante una fiscalización.</li>
+        <li>El miedo a multas o demandas está siempre presente.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="ia" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-6 text-turquesa">Inteligencia Artificial al servicio de tu tranquilidad</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Detectamos documentos faltantes.</li>
+        <li>Monitoreamos tu cumplimiento.</li>
+        <li>Generamos alertas tempranas para que no se te pase nada.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="beta" class="py-16 bg-coral text-center">
+    <div class="max-w-2xl mx-auto px-4 text-white">
+      <h3 class="text-3xl font-bold mb-4">✨ Prueba gratis la beta</h3>
+      <p class="mb-4">Estamos construyendo la herramienta ideal para emprendedores como tú.</p>
+      <p class="mb-6">📊 Responde esta encuesta de 2 minutos y podrás acceder GRATIS a la versión beta:</p>
+      <a href="https://tally.so/r/mZe895" class="bg-white text-coral font-semibold px-6 py-3 rounded-full text-lg" target="_blank">🔗 Ir a la encuesta</a>
+    </div>
+  </section>
+  <section id="fundador" class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-4 text-turquesa">Hecho por emprendedores, para emprendedores</h3>
+      <p>Soy Jose Torrealba, fundador de AIHuma. Hace poco viví una fiscalización de la Dirección del Trabajo y entendí lo complejo que puede ser cumplir con la ley. AIHuma nace de esa necesidad real.</p>
+    </div>
+  </section>
+  <footer class="bg-white border-t py-8 text-center">
+    <p class="mb-2">&copy; 2025 AIHuma. Todos los derechos reservados.</p>
+    <p>Síguenos en Instagram: <a href="https://www.instagram.com/aihuma.cl" class="text-infoAzul hover:underline" target="_blank">@aihuma.cl</a></p>
+  </footer>
+</body>
+</html>
