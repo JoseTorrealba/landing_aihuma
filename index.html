@@ -31,15 +31,21 @@
    <style>
     @media (max-width: 768px) {
       .swiper-pagination {
-        @apply relative mt-4 z-10;
+        position: relative;
+        margin-top: 1rem;
+        z-index: 10;
       }
+
       .swiper-container {
-        @apply pb-12;
+        padding-bottom: 3rem;
       }
     }
 
     .swiper-pagination {
-      @apply absolute bottom-2 left-1/2 transform -translate-x-1/2;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   </style>
 </head>
@@ -181,32 +187,6 @@
     </a>
   </div>
 </section>
-
-<!-- Swiper.js Configuración Corregida -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    loop: true,
-    autoplay: {
-      delay: 5000, // Cambia cada 5 segundos
-      disableOnInteraction: false,
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 1, // Mostrar 1 par de casos por diapositiva en pantallas más grandes
-        spaceBetween: 20,
-      },
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-</script>
-
 
   <!-- Modal para el formulario de Tally -->
   <div id="demoModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
