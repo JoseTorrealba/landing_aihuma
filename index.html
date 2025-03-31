@@ -48,6 +48,27 @@
       transform: translateX(-50%);
     }
   </style>
+  <meta name="description" content="AIHuma - Software de gestión laboral con IA para evitar multas y errores en documentación laboral. Automatiza contratos, anexos y liquidaciones." />
+  <meta name="keywords" content="gestión laboral, recursos humanos, contratos laborales, IA, automatización RRHH, documentos laborales" />
+  <meta name="author" content="AIHuma" />
+  
+  <!-- Open Graph para redes sociales -->
+  <meta property="og:title" content="AIHuma - Gestión Laboral Automatizada con IA" />
+  <meta property="og:description" content="Evita multas y errores laborales automatizando tu gestión de documentos con inteligencia artificial." />
+  <meta property="og:image" content="URL-DE-TU-IMAGEN" />
+  <meta property="og:url" content="https://aihuma.cl" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AIHuma - Gestión Laboral Automatizada con IA" />
+  <meta name="twitter:description" content="Evita multas y errores laborales automatizando tu gestión de documentos con IA." />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://aihuma.cl" />
+
+  <!-- Precargar recursos críticos -->
+  <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css" as="style" />
+  <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.js" as="script" />
 </head>
 
 <body class="bg-grisPerla text-grisOscuro font-sans">
@@ -56,7 +77,14 @@
   <header class="bg-white shadow-md relative">
     <div class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
       <a href="#" class="flex items-center">
-        <img src="image.png" alt="Logo AIHuma" class="h-10 w-auto cursor-pointer" />
+        <img 
+            src="image.png" 
+            alt="Logo AIHuma - Software de gestión laboral" 
+            class="h-10 w-auto cursor-pointer"
+            width="40"
+            height="40"
+            loading="lazy"
+        />
         <div class="ml-2 flex flex-col leading-tight">
           <span class="text-lg font-bold text-turquesa">AIHuma</span>
           <span class="text-xs text-infoAzul leading-tight">🤖 Automatizado con IA</span>
@@ -66,16 +94,18 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-turquesaClaro py-20 text-center">
-    <div class="max-w-2xl mx-auto px-4">
-      <h1 class="text-2xl md:text-4xl font-bold text-white mb-4">¿Y si mañana llega la Dirección del Trabajo? Evita
-        multas y errores laborales antes de que sea tarde.</h1>
-      <p class="text-sm md:text-lg text-white mb-6">Cumple con la ley laboral sin enredos con AIHuma.</p>
-      <button onclick="openModal()" class="bg-coral text-white font-semibold px-5 py-2 md:px-6 md:py-3 rounded-full text-base mx-auto md:w-auto hover:bg-coral/80 flex items-center justify-center">
-        🚀 Solicita tu Demo Gratuita
-      </button>
-    </div>
-  </section>
+  <main>
+    <section class="bg-turquesaClaro py-20 text-center" aria-label="Introducción">
+      <div class="max-w-2xl mx-auto px-4">
+        <h1 class="text-2xl md:text-4xl font-bold text-white mb-4">¿Y si mañana llega la Dirección del Trabajo? Evita
+          multas y errores laborales antes de que sea tarde.</h1>
+        <p class="text-sm md:text-lg text-white mb-6">Cumple con la ley laboral sin enredos con AIHuma.</p>
+        <button onclick="openModal()" class="bg-coral text-white font-semibold px-5 py-2 md:px-6 md:py-3 rounded-full text-base mx-auto md:w-auto hover:bg-coral/80 flex items-center justify-center" aria-label="Solicitar demo gratuita">
+          🚀 Solicita tu Demo Gratuita
+        </button>
+      </div>
+    </section>
+  </main>
 
   <!-- Casos de Uso / Cómo Funciona -->
   <section id="casos" class="py-16 bg-white">
@@ -101,74 +131,14 @@
     </div>
   </section>
 
-<!-- Caso de Uso / Ejemplo Real - Carrusel Corregido -->
+<!-- Caso de Uso / Ejemplo Real - Carrusel  -->
 <section id="caso-uso" class="py-16 bg-grisPerla">
   <div class="max-w-4xl mx-auto px-4 text-center">
     <h3 class="text-3xl font-bold mb-6 text-turquesa">Antes y Después de AIHuma</h3>
-    <div class="swiper-container overflow-hidden">
+    <div class="swiper-container overflow-hidden" role="region" aria-label="Casos de éxito">
       <div class="swiper-wrapper">
-
-        <!-- Caso 1 -->
-        <div class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-          <div class="p-4 bg-white rounded-lg shadow-md w-full">
-            <h4 class="font-bold text-lg">❗ Cambio de Jornada No Registrado</h4>
-            <p class="text-sm">Laura cambió el horario de un trabajador, pero olvidó firmar el anexo. La fiscalización detectó el error y recibió una multa.</p>
-          </div>
-          <div class="p-4 bg-exito text-white rounded-lg shadow-md w-full">
-            <h4 class="font-bold text-lg">✅ Con AIHuma</h4>
-            <p class="text-sm">La IA detecta los cambios en las jornadas y genera el anexo automáticamente, evitando sanciones.</p>
-          </div>
-        </div>
-
-        <!-- Caso 2 -->
-        <div class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-          <div class="p-4 bg-white rounded-lg shadow-md w-full">
-            <h4 class="font-bold text-lg">❗ Liquidación No Entregada a Tiempo</h4>
-            <p class="text-sm">Pedro no entregó la liquidación del mes anterior a su trabajador, generando denuncias y sanciones.</p>
-          </div>
-          <div class="p-4 bg-exito text-white rounded-lg shadow-md w-full">
-            <h4 class="font-bold text-lg">✅ Con AIHuma</h4>
-            <p class="text-sm">AIHuma genera las liquidaciones a tiempo y recuerda cuándo deben ser entregadas y firmadas.</p>
-          </div>
-        </div>
-
-        <!-- Caso 3 -->
-        <div class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-          <div class="p-4 bg-white rounded-lg shadow-md w-full">
-            <h4 class="font-bold text-lg">❗ Contratos Incompletos</h4>
-            <p class="text-sm">Marcos contrató dos nuevos trabajadores, pero olvidó firmar los contratos, lo que resultó en multas.</p>
-          </div>
-          <div class="p-4 bg-exito text-white rounded-lg shadow-md w-full">
-            <h4 class="font-bold text-lg">✅ Con AIHuma</h4>
-            <p class="text-sm">La IA genera automáticamente los contratos y asegura que todo esté firmado y archivado.</p>
-          </div>
-        </div>
-
-        <!-- Caso 4 -->
-        <div class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-          <div class="p-4 bg-white rounded-lg shadow-md w-full">
-            <h4 class="font-bold text-lg">❗ Modificación de Modalidad de Trabajo</h4>
-            <p class="text-sm">Andrea cambió el teletrabajo a modalidad híbrida sin firmar un anexo, quedando expuesta a sanciones.</p>
-          </div>
-          <div class="p-4 bg-exito text-white rounded-lg shadow-md w-full">
-            <h4 class="font-bold text-lg">✅ Con AIHuma</h4>
-            <p class="text-sm">AIHuma genera anexos de cambio de modalidad y notifica para que se firmen digitalmente.</p>
-          </div>
-        </div>
-
-        <!-- Caso 5 -->
-        <div class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-          <div class="p-4 bg-white rounded-lg shadow-md w-full">
-            <h4 class="font-bold text-lg">❗ Firma de Contratos Retrasada</h4>
-            <p class="text-sm">Javier firmó los contratos una semana después de la incorporación de sus trabajadores, generando problemas legales.</p>
-          </div>
-          <div class="p-4 bg-exito text-white rounded-lg shadow-md w-full">
-            <h4 class="font-bold text-lg">✅ Con AIHuma</h4>
-            <p class="text-sm">La plataforma envía alertas para que los contratos se firmen a tiempo, cumpliendo con la ley.</p>
-          </div>
-        </div>
+        <!-- Los slides se generarán dinámicamente aquí -->
       </div>
-
       <!-- Paginación del Carrusel -->
       <div class="swiper-pagination"></div>
     </div>
@@ -228,9 +198,10 @@
 
 <!-- Swiper.js Configuración y Estilo -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
 
 <script>
+document.addEventListener('DOMContentLoaded', function() {
   // Lista de casos de uso
   const casos = [
     {
@@ -246,16 +217,16 @@
       despuesTexto: "AIHuma genera las liquidaciones a tiempo y recuerda cuándo deben ser entregadas y firmadas."
     },
     {
-      antesTitulo: "❗ Contratos Incompletos al Ingresar Nuevos Trabajadores",
+      antesTitulo: "❗ Contratos Incompletos",
       antesTexto: "Marcos contrató dos nuevos trabajadores, pero olvidó firmar los contratos, lo que resultó en multas.",
       despuesTitulo: "✅ Con AIHuma",
       despuesTexto: "La IA genera automáticamente los contratos y asegura que todo esté firmado y archivado."
     },
     {
-      antesTitulo: "❗ Modificación de Modalidad de Trabajo Sin Anexo",
-      antesTexto: "Andrea cambió el teletrabajo de su equipo a modalidad híbrida, sin firmar el anexo correspondiente.",
+      antesTitulo: "❗ Modificación de Modalidad de Trabajo",
+      antesTexto: "Andrea cambió el teletrabajo a modalidad híbrida sin firmar un anexo, quedando expuesta a sanciones.",
       despuesTitulo: "✅ Con AIHuma",
-      despuesTexto: "AIHuma genera los anexos de cambio de modalidad y notifica para que se firmen digitalmente."
+      despuesTexto: "AIHuma genera anexos de cambio de modalidad y notifica para que se firmen digitalmente."
     },
     {
       antesTitulo: "❗ Firma de Contratos Retrasada",
@@ -297,6 +268,7 @@
 
   // Generar HTML dinámico para los casos
   const container = document.querySelector('.swiper-wrapper');
+  container.innerHTML = ''; // Limpia el contenedor primero
 
   casos.forEach((caso) => {
     const slideHTML = `
@@ -310,7 +282,7 @@
           <p class="text-sm">${caso.despuesTexto}</p>
         </div>
       </div>`;
-    container.innerHTML += slideHTML;
+    container.insertAdjacentHTML('beforeend', slideHTML);
   });
 
   // Inicializar Swiper.js
@@ -333,6 +305,21 @@
       }
     }
   });
+});
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "AIHuma",
+    "applicationCategory": "BusinessApplication",
+    "description": "Software de gestión laboral automatizado con inteligencia artificial para evitar multas y errores en documentación laboral.",
+    "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock"
+    }
+}
 </script>
 </body>
 
